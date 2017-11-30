@@ -107,13 +107,16 @@ h2 {
 
 .img-container {
   border:3px solid red;
+  height: 5rem;
 }
 
 .item-text {
   display: flex;
-  align-items: baseline;
+  justify-content: center;
   text-align: center;
   border: 3px solid green;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .item {
