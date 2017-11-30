@@ -1,0 +1,209 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica, sans-serif;
+}
+
+html, body {
+  margin: 0px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab {
+  display: flex;
+  position: fixed;
+  background-color: cadetblue;
+  width: 960px;
+  height: 3rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+}
+
+nav span {
+  display: inline-block;
+  padding-right: 2rem;
+}
+
+a {
+  color: white;
+}
+
+.logo {
+  padding-left: 2rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+}
+
+.logo h1 {
+  font-size: 1rem;
+  margin: 1rem;
+  color: white;
+}
+
+.background {
+  display: flex;
+  justify-content: flex-end;
+  background-image: url("../images/glasses-bg.png");
+  background-size: cover;
+  width: 100%;
+  height: 30rem;
+}
+
+.banner .text {
+  background-color: white;
+  padding:1.5rem 5rem;
+  margin-top: 10rem;
+  margin-right: 11rem;
+}
+
+h2 {
+  font-weight: bold;
+  font-size:2rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+#one img {
+  width: 3.5rem;
+}
+
+#two img {
+  width: 5rem;
+}
+
+#three img {
+  width: 5rem;
+}
+
+#images {
+  border: 4px solid grey;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  height: 8rem;
+  width: 960px;
+}
+
+.container-items {
+  display: flex;
+  justify-content: center;
+}
+
+.img-container {
+  border:3px solid red;
+}
+
+.item-text {
+  display: flex;
+  align-items: baseline;
+  text-align: center;
+  border: 3px solid green;
+}
+
+.item {
+  border: 3px solid blue;
+  margin-left: 6rem;
+  width: 8rem;
+}
+
+.info {
+  color: white;
+  margin-bottom: 5rem;
+}
+
+.site-container, .details {
+  border: 2px solid blue;
+}
+
+.site-container {
+  border:2px solid green;
+  display: flex;
+  justify-content: flex-start;
+  width: 960px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5rem;
+}
+
+#alpha {
+  width: 35%;
+}
+
+#beta {
+  width: 35%;
+}
+
+p {
+  color: white;
+  padding-top: 0.5rem;
+}
+
+.information {
+  background-color: cadetblue;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  width: 10rem;
+}
+
+.information span {
+  background-color: cadetblue;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.information-v p{
+  color:black;
+  border: 2px solid purple;
+}
+
+.footer {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 960px;
+}
+
+.footer-container {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo-black {
+  padding-left: 4rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo-black img {
+  height: 1.5rem;
+}
+
+.logo-black h1 {
+  font-size: 1rem;
+  margin: 1rem;
+  color: black;
+}
