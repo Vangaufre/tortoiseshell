@@ -12,6 +12,8 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .tab {
@@ -78,6 +80,10 @@ h2 {
   text-transform: uppercase;
 }
 
+.tab, .image-container {
+  border: 3px solid blue;
+}
+
 #one img {
   width: 3.5rem;
 }
@@ -91,13 +97,13 @@ h2 {
 }
 
 #images {
-  border: 4px solid grey;
   margin-top: 3rem;
   margin-bottom: 3rem;
   display: flex;
   flex-direction: row;
   height: 8rem;
   width: 960px;
+  justify-content: center;
 }
 
 .container-items {
@@ -106,7 +112,6 @@ h2 {
 }
 
 .img-container {
-  border:3px solid red;
   height: 5rem;
   width: 100%;
   display: flex;
@@ -118,24 +123,19 @@ h2 {
   display: flex;
   justify-content: center;
   text-align: center;
-  border: 3px solid green;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
 .item {
-  border: 3px solid blue;
   margin-left: 6rem;
   width: 8rem;
+  border: 2px solid red;
 }
 
 .info {
   color: white;
   margin-bottom: 5rem;
-}
-
-.site-container, .details {
-  border: 2px solid blue;
 }
 
 .site-container {
@@ -181,7 +181,6 @@ p {
 
 .information-v p{
   color:black;
-  border: 2px solid purple;
 }
 
 .footer {
@@ -217,7 +216,6 @@ p {
 
 @media only screen and (max-width:1024px) {
   .main-container {
-    width: 100%;
     border:3px solid purple;
   }
   .tab {
@@ -240,6 +238,10 @@ p {
     line-height: 1.2;
     text-transform: uppercase;
   }
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
 
   .info .site-container{
     width: 100%;
@@ -247,18 +249,17 @@ p {
     border: 4px solid yellow;
   }
 
-  .container-items .image-container {
+  #images {
     width: 100%;
     justify-content: center;
     align-items: center;
+    border:4px solid orange;
   }
 
   .footer-container .footer {
     width: 100%;
   }
   .footer-container {
-    padding-left: 100%;
-    padding-right: 100%;
   }
 
 }
