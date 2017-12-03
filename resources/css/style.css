@@ -214,3 +214,51 @@ p {
   margin: 1rem;
   color: black;
 }
+
+@media only screen and (max-width:1024px) {
+  .main-container {
+    width: 100%;
+    border:3px solid purple;
+  }
+  .tab {
+    margin-top: 0rem;
+    width: 100%;
+  }
+  .background {
+    height: 22rem;
+  }
+  .banner .text {
+    background-color: white;
+    padding:0.75rem 4rem;
+    margin-top: 10rem;
+    margin-right: 2rem;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size:1.33rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .info .site-container{
+    width: 100%;
+    justify-content: space-around;
+    border: 4px solid yellow;
+  }
+
+  .container-items .image-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-container .footer {
+    width: 100%;
+  }
+  .footer-container {
+    padding-left: 100%;
+    padding-right: 100%;
+  }
+
+}
