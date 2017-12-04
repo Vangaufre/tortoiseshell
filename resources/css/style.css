@@ -67,6 +67,8 @@ h1 {
   font-weight: bold;
 }
 
+/* Container */
+
 #one img {
   width: 3.5rem;
 }
@@ -80,8 +82,8 @@ h1 {
 }
 
 #images {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   display: flex;
   flex-direction: row;
   height: 8rem;
@@ -111,7 +113,7 @@ h1 {
 }
 
 .item {
-  margin-left: 6rem;
+  margin-left: 1rem;
   width: 8rem;
   border: 2px solid red;
 }
@@ -266,5 +268,27 @@ p {
   .main-banner h1 {
     font-size: 1rem;
   }
-
+  #images {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50%;
+    margin-bottom: 50%;
+  }
+  .item {
+    width: 30%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+  }
+  .item-text{
+    font-family: Helvetica;
+    font-size: 0.77rem;
+  }
+  .site-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .details {
+    width: 40%;
+    margin-left: 10%;
+  }
 }
