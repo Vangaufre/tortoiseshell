@@ -282,12 +282,25 @@ p {
   }
   .banner {
     margin-top: 9rem;
-    width: 100%;
   }
   .info .site-container {
     flex-direction: column;
   }
-  #images {
-    flex-direction: column;
+  .content{
+    border: 2px solid blue;
+    display: block;
+    margin-top: 3.77rem;
+
+  }
+  .image-container {
+    border: 2px solid orange;
+  }
+  .item-text{
+    font-family: Helvetica;
+    font-size: 0.77rem;
+  }
+  .image-container {
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
   }
   }
