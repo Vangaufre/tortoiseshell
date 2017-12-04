@@ -1,90 +1,70 @@
+/* Universal Styles */
 html {
+  font-family: "Helvetica", sans-serif;
   font-size: 18px;
-  line-height: 1.4;
-  font-family: Helvetica, sans-serif;
-}
-
-html, body {
-  margin: 0px;
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.tab {
-  display: flex;
-  align-items: center;
-  background-color: cadetblue;
-  width: 960px;
-  height: 3rem;
-  margin-top: 1rem;
-  margin: 0 auto;
-}
-
-nav {
-  text-align: right;
-  flex-grow: 1;
-}
-
-nav span {
-  display: inline-block;
-  padding-right: 2rem;
-}
-
-a {
-  color: white;
-}
-
-.logo {
-  padding-left: 2rem;
-  padding-right: 1rem;
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 1.5rem;
-}
-
-.logo h1 {
-  font-size: 1rem;
-  margin: 1rem;
-  color: white;
-}
-
-.background {
-  display: flex;
-  flex-direction: column;
-  background-image: url("../images/glasses-bg.png");
-  background-size: cover;
-  width: 100%;
-  height: 30rem;
-  border: 3px solid red;
-}
-
-.banner .text {
   background-color: white;
-  padding:1rem;
+}
+body {
+  line-height: 1.4;
+}
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+.flex {
+  display: flex;
 }
 
-.banner {
-  margin-left: 30rem;
+/* Header */
+
+header {
+  height: 30rem;
+  padding-top: 1rem;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cadetblue;
+  color: white;
+}
+nav div {
+  display: flex;
+  align-items: center;
+}
+nav img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+nav ul {
+  margin-right: 1rem;
+}
+nav li {
+  display: inline;
+  padding: 0 1rem;
+}
+.truncated-menu {
+  display: none;
+}
+header .flex {
+  justify-content: flex-end;
+}
+.main-banner {
+  display: inline-block;
+  padding: 1.5rem 5rem;
   margin-top: 10rem;
-  width: 50%;
-  border: 4px solid yellow;
-  text-align: center;
+  margin-right: -2rem;
+  background-color: white;
 }
-
-h2 {
-  font-weight: bold;
-  font-size:2rem;
+h1 {
+  font-size: 2rem;
   line-height: 1.2;
-  text-transform: uppercase;
+  font-weight: bold;
 }
 
 #one img {
@@ -139,6 +119,8 @@ h2 {
 .info {
   color: white;
   margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .site-container {
@@ -217,26 +199,21 @@ p {
   color: black;
 }
 
-@media only screen and (max-width:1024px) {
-  .main-container {
-    border:3px solid purple;
-  }
-  .tab {
-    width: 100%;
-  }
-  .background {
+@media only screen and (max-width: 1024px) {
+  header {
     height: 22rem;
+    padding-top: 0;
   }
-  .banner .text {
-    background-color: white;
-    padding:0.75rem 4rem;
+  nav.container {
+    max-width: 100%;
   }
-  .banner {
-    margin-left: 20rem;
+  .main-banner {
+    padding: 0.75rem 4rem;
     margin-top: 5rem;
+    margin-right: 2rem;
   }
-  h2 {
-    font-size:1.33rem;
+  .main-banner h1 {
+    font-size: 1.33rem;
   }
   .image-container {
     display: flex;
@@ -261,46 +238,33 @@ p {
   .footer-container {
     border: 2px solid green;
   }
-
 }
 
-@media only screen and (max-width:470px) {
-  .main-container {
-
-  }
-  .background {
-    height:17rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  h1 {
+@media only screen and (max-width: 700px) {
+  .menu ul {
     display: none;
   }
-  .banner .text {
-    background-color: white;
-  }
-  .banner {
-    margin-top: 9rem;
-  }
-  .info .site-container {
-    flex-direction: column;
-  }
-  .content{
-    border: 2px solid blue;
+  .menu ul.truncated-menu {
     display: block;
-    margin-top: 3.77rem;
+  }
+}
 
+@media only screen and (max-width: 560px) {
+  header div span {
+    display: none;
   }
-  .image-container {
-    border: 2px solid orange;
+  header {
+    background-position: 20%;
+    height: 17rem;
   }
-  .item-text{
-    font-family: Helvetica;
-    font-size: 0.77rem;
+  .main-banner {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 9rem auto 0 auto;
+    text-align: center;
   }
-  .image-container {
-    margin-top: 3.77rem;
-    margin-bottom: 3.77rem;
+  .main-banner h1 {
+    font-size: 1rem;
   }
-  }
+
+}
