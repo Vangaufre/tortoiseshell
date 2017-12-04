@@ -270,7 +270,6 @@ p {
   }
   .item {
     width: 30%;
-    margin-left: 10%;
     margin-bottom: 5%;
   }
   .item-text{
@@ -298,5 +297,14 @@ p {
   }
   .footer-container {
     margin-top: -5rem;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    padding-left: 90%;
+    padding-right: 100%;
+  }
+  h1 {
+    display: none;
   }
 }
